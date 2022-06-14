@@ -14,7 +14,7 @@ function Blogcomments() {
       <Fragment>
     <div>
     {comments.map(comment => (
-          <h3 key={comment.id}>
+          <h3 style = {CommentStyle} key={comment.id}>
            {comment.id}<br/>
           {comment.name}<br/>
           {comment.email}
@@ -24,6 +24,10 @@ function Blogcomments() {
      </div>
      </Fragment>
   )
+}
+
+const CommentStyle ={
+  color : '#000'
 }
 
 export default Blogcomments
