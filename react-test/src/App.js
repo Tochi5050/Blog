@@ -1,14 +1,16 @@
 import BlogState from "./components/BlogState";
 import Blogpost from "./components/Blogpost";
-import {Route, Routes} from 'react-router-dom'
-import Blogcomments from "./components/Blogcomments";
+import {Route, Routes} from 'react-router-dom';
+
 function App() {
   return (
-    <BlogState>
     
+    <BlogState>
+      
       <Routes>
-        <Route exact path= '/posts' element={<Blogpost/>}/>
-        <Route path= '/comments' element={<Blogcomments/>}/>
+      
+        <Route path= '/posts/:id' element={<Blogpost/>}/>
+        
       </Routes>
   
     </BlogState>
